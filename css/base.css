@@ -34,15 +34,20 @@ a {
     color: inherit;
     text-decoration: none;
 }
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
 
-/* Layout di base */
+/* Layout di base
 .container {
     width: 100%;
     max-width: var(--max-width);
     margin: 0 auto;
     padding: 0 1.5rem;
 }
-
+ */
 /* HEADER + NAV */
 header {
     position: sticky;
@@ -573,8 +578,10 @@ footer span {
     }
 
 }
-.container {
-  max-width: 1080px;
-  margin: 0 auto;
-  padding: 0 16px;
+@media (max-width: 640px) {
+  .container {
+    padding: 0 12px;
+  }
 }
+
+
