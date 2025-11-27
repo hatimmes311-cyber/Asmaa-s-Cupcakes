@@ -217,3 +217,48 @@ body {
     padding: 10px 12px;
   }
 }
+@media (max-width: 720px) {
+  header {
+    padding: 10px 0;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .logo {
+    gap: 8px;
+  }
+
+  .nav-links {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 10px;
+  }
+
+  .nav-link {
+    font-size: 14px;
+    padding: 2px 0;
+  }
+
+  .nav-cta {
+    align-self: stretch;
+    width: 100%;
+    justify-content: center;
+    margin-top: 4px;
+  }
+}
+@media (max-width: 720px) {
+  .nav-links {
+    display: flex !important;
+  }
+}
+header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+
+
