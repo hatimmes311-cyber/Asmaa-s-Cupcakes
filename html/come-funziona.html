@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Asmaa's Cupcake – Come funziona</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Scopri come funziona l’ordine dei cupcake: passi semplici e chiari.">
+    <link rel="stylesheet" href="../css/base.css">
+</head>
+
+<body data-page="come-funziona">
+
+
+    <!-- NAVBAR CARICATA AUTOMATICAMENTE -->
+    <div id="site-header"></div>
+
+    <main>
+        <section>
+            <div class="container">
+                <h2>Come funziona</h2>
+                <p class="section-subtitle">
+                    Un flusso semplice: ci racconti l’evento, definiamo i dettagli, pensiamo ai cupcake.
+                </p>
+
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <strong>Ci racconti l’occasione</strong>
+                        <p>Compleanno, festa a casa, ufficio, baby shower: indicaci data, numero indicativo di persone e
+                            stile.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <strong>Scegliamo gusti &amp; tema</strong>
+                        <p>Definiamo gusti, colori, eventuali scritte o decorazioni a tema (nome, età, ecc.).</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <strong>Conferma &amp; consegna</strong>
+                        <p>Confermiamo quantità e prezzo, concordiamo ritiro o consegna (se disponibile nella zona).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <span>© <span id="year"></span> Asmaa's Cupcake · Progetto artigianale di cupcake fatti a mano.</span>
+        </div>
+    </footer>
+    <div class="cupcake-float">🧁</div>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <!-- SCRIPT CHE CARICA LA NAVBAR -->
+    <script src="../js/layout.js"></script>
+</body>
+
+</html>

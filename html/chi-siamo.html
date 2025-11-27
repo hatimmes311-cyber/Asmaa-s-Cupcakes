@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Asmaa's Cupcake – Chi siamo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Scopri chi c’è dietro Asmaa's Cupcake e come lavoriamo." />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/cupcake.css" />
+</head>
+
+<body data-page="chi-siamo">
+    <!-- NAVBAR CARICATA QUI -->
+    <div id="site-header"></div>
+
+    <main>
+        <section>
+            <div class="container">
+                <h2>Chi c’è dietro Asmaa's Cupcake</h2>
+                <p class="section-subtitle">
+                    Un progetto artigianale nato per portare cupcake belli da vedere e
+                    seriamente buoni da mangiare.
+                </p>
+
+                <div class="about-grid">
+                    <div>
+                        <p>
+                            Ogni cupcake viene preparato in piccoli lotti, curando
+                            consistenza, gusto e decorazione. Niente produzioni industriali,
+                            niente dolci anonimi: solo ricette provate e riprovate.
+                        </p>
+                        <p style="margin-top: 0.6rem">
+                            Ideale per chi vuole un dolce “instagrammabile”, ma che non si
+                            ferma alla foto.
+                        </p>
+                    </div>
+
+                    <div class="about-card">
+                        <h3>Cosa trovi nei nostri cupcake</h3>
+                        <ul class="about-list">
+                            <li>
+                                <div class="about-dot"></div>
+                                <span>Impasti soffici, calibrati per reggere creme e
+                                    decorazioni</span>
+                            </li>
+                            <li>
+                                <div class="about-dot"></div>
+                                <span>Farine e cacao selezionati, niente scorciatoie in
+                                    polvere</span>
+                            </li>
+                            <li>
+                                <div class="about-dot"></div>
+                                <span>Decorazioni pensate per tema, colori e occasione</span>
+                            </li>
+                            <li>
+                                <div class="about-dot"></div>
+                                <span>Possibilità di personalizzare gusti, scritte e
+                                    colori</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <span>© <span id="year"></span> Asmaa's Cupcake · Progetto artigianale di
+                cupcake fatti a mano.</span>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+    </script>
+    <script src="../js/layout.js"></script>
+</body>
+
+</html>

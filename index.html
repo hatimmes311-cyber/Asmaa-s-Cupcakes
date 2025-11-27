@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Asmaa's Cupcake – Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Cupcake artigianali fatti a mano, uno a uno. Progetto Asmaa's Cupcake." />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/cupcake.css" />
+</head>
+
+<body data-page="home">
+    <!-- NAVBAR CARICATA QUI -->
+    <div id="site-header"></div>
+
+    <main>
+        <!-- HERO PRINCIPALE -->
+        <section class="hero">
+            <div class="container hero-inner">
+                <div>
+                    <div class="hero-badge">
+                        <span class="hero-badge-dot"></span>
+                        <span>Piccola produzione, grande cura</span>
+                    </div>
+
+                    <h1>
+                        Cupcake artigianali
+                        <span>fatti a mano</span>, uno a uno.
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        Ricette curate, ingredienti selezionati e decorazioni pensate per
+                        feste, eventi e momenti in cui un dolce “normale” non basta.
+                    </p>
+
+                    <div class="hero-meta">
+                        <span class="hero-meta-badge">Batch limitati</span>
+                        <span>🎉 Perfetti per compleanni &amp; eventi</span>
+                        <span>✨ Personalizzabili su richiesta</span>
+                    </div>
+
+                    <div class="hero-actions">
+                        <button class="btn btn-primary" onclick="window.location.href='./html/contatti.html'">
+                            Richiedi un preventivo
+                        </button>
+                        <button class="btn btn-outline" onclick="window.location.href='./html/cupcake.html'">
+                            Guarda i gusti
+                        </button>
+                    </div>
+
+                    <p class="hero-note">
+                        Rispondiamo il prima possibile, senza bot di mezzo. Solo cupcake.
+                    </p>
+                </div>
+
+                <div class="hero-img-wrap">
+                    <div class="hero-img-placeholder">
+                        Qui puoi inserire una foto reale dei tuoi cupcake (formato
+                        orizzontale). Usa un’immagine luminosa, con 3–6 cupcake ben
+                        visibili.
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="hero-stat-card">
+                            <strong>Eventi felici</strong>
+                            <span>Compleanni, baby shower, cene tra amici</span>
+                        </div>
+                        <div class="hero-stat-card">
+                            <strong>Zero mix pronti</strong>
+                            <span>Impasti e creme preparati da zero</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEWS DEL MESE -->
+        <section class="home-news-section" aria-labelledby="home-news-title">
+            <div class="container">
+                <div class="home-news-header">
+                    <span class="home-news-label">Novità del mese</span>
+                    <span class="home-news-month">Dicembre · Speciale Natale</span>
+                </div>
+
+                <article class="home-news-card">
+                    <div class="home-news-media">
+                        <div class="home-news-photo">
+                            <img src="./img/news-natale.jpg"
+                                alt="Box di cupcake natalizi con decorazioni rosse e verdi" />
+                        </div>
+                    </div>
+
+                    <div class="home-news-body">
+                        <h2 id="home-news-title" class="home-news-title">
+                            Box cupcake natalizi su prenotazione
+                        </h2>
+
+                        <p class="home-news-text">
+                            Una selezione di cupcake natalizi con decorazioni a tema:
+                            rossi, verdi, bianco neve e piccoli dettagli in zucchero. Ideali
+                            per cene, scambi di regali e uffici che non vogliono il solito
+                            panettone triste.
+                        </p>
+
+                        <ul class="home-news-meta">
+                            <li><strong>Disponibilità:</strong> tutto dicembre, fino al 23</li>
+                            <li><strong>Formato:</strong> box da 6 o 12 cupcake misti</li>
+                            <li>
+                                <strong>Ordinazioni:</strong> almeno 3 giorni prima
+                            </li>
+                        </ul>
+
+                        <button class="btn btn-outline" onclick="window.location.href='./html/contatti.html'">
+                            Chiedi info per il box Natale
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <span>© <span id="year"></span> Asmaa's Cupcake · Progetto artigianale di
+                cupcake fatti a mano.</span>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+    </script>
+    <script src="./js/layout.js"></script>
+</body>
+
+</html>

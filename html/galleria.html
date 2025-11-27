@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Asmaa's Cupcake – Galleria</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Galleria fotografica dei cupcake e degli eventi Asmaa's Cupcake.">
+    <link rel="stylesheet" href="../css/base.css">
+</head>
+
+<body data-page="galleria">
+
+
+    <!-- NAVBAR CARICATA AUTOMATICAMENTE -->
+    <div id="site-header"></div>
+
+    <main>
+        <section>
+            <div class="container">
+                <h2>Galleria</h2>
+                <p class="section-subtitle">
+                    Qui puoi inserire qualche foto reale delle tue creazioni. Per ora trovi dei segnaposto.
+                </p>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item">Foto cupcake compleanno</div>
+                    <div class="gallery-item">Foto box misto</div>
+                    <div class="gallery-item">Dettaglio decorazioni</div>
+                    <div class="gallery-item">Cupcake a tema</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <span>© <span id="year"></span> Asmaa's Cupcake · Progetto artigianale di cupcake fatti a mano.</span>
+        </div>
+    </footer>
+    <div class="cupcake-float">🧁</div>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <!-- SCRIPT CHE CARICA LA NAVBAR -->
+    <script src="../js/layout.js"></script>
+</body>
+
+</html>

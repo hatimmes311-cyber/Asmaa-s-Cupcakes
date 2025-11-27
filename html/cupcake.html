@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Asmaa's Cupcake – I nostri cupcake</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Gusti, varianti e opzioni dei cupcake artigianali di Asmaa.">
+    <link rel="stylesheet" href="../css/base.css">
+</head>
+
+<body data-page="chi-siamo">
+
+
+    <!-- NAVBAR CARICATA AUTOMATICAMENTE -->
+    <div id="site-header"></div>
+
+    <main>
+        <section>
+            <div class="container">
+                <h2>I nostri cupcake</h2>
+                <p class="section-subtitle">
+                    Alcuni esempi di gusti. Puoi chiedere varianti e personalizzazioni in base al tuo evento.
+                </p>
+
+                <div class="cards-grid">
+                    <article class="card">
+                        <span class="card-tag">Classico</span>
+                        <div class="card-title">Vaniglia &amp; crema leggera</div>
+                        <p>Base alla vaniglia morbida, frosting delicato e decorazioni minimal, perfetto per tutti i
+                            gusti.</p>
+                        <div class="card-footer">
+                            <span class="card-price">da 2,50 €</span>
+                            <span>Min. 6 pezzi</span>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <span class="card-tag">Cioccolato</span>
+                        <div class="card-title">Dark cocoa &amp; ganache</div>
+                        <p>Impasto intenso al cacao, ganache al cioccolato e topping croccante.</p>
+                        <div class="card-footer">
+                            <span class="card-price">da 2,80 €</span>
+                            <span>Min. 6 pezzi</span>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <span class="card-tag">Frutta</span>
+                        <div class="card-title">Limone &amp; meringa</div>
+                        <p>Base al limone, cuore morbido e cappello di meringa fiammeggiata.</p>
+                        <div class="card-footer">
+                            <span class="card-price">da 3,00 €</span>
+                            <span>Min. 6 pezzi</span>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <span class="card-tag">Evento</span>
+                        <div class="card-title">Tema personalizzato</div>
+                        <p>Colori, decorazioni e mini topper coordinati al tuo evento (compleanni, baby shower, ecc.).
+                        </p>
+                        <div class="card-footer">
+                            <span class="card-price">su richiesta</span>
+                            <span>Min. 12 pezzi</span>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <span class="card-tag">Senza lattosio</span>
+                        <div class="card-title">Versione dedicata</div>
+                        <p>Opzioni studiate per chi evita latticini, senza rinunciare al gusto.</p>
+                        <div class="card-footer">
+                            <span class="card-price">da 3,00 €</span>
+                            <span>Min. 6 pezzi</span>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <span class="card-tag">Assaggio</span>
+                        <div class="card-title">Box degustazione</div>
+                        <p>Selezione mista di gusti, perfetta per provare e scegliere il tuo preferito.</p>
+                        <div class="card-footer">
+                            <span class="card-price">su richiesta</span>
+                            <span>Min. 8 pezzi</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <span>© <span id="year"></span> Asmaa's Cupcake · Progetto artigianale di cupcake fatti a mano.</span>
+        </div>
+    </footer>
+    <div class="cupcake-float">🧁</div>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <!-- SCRIPT CHE CARICA LA NAVBAR -->
+    <script src="../js/layout.js"></script>
+</body>
+
+</html>

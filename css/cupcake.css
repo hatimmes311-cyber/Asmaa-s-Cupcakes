@@ -1,0 +1,201 @@
+/*Lo userai solo quando ti serve qualcosa di non riutilizzabile sugli altri siti.*/
+/* Stili specifici per il sito Asmaa's Cupcake */
+/* Qui metti solo cose proprio legate a questo progetto,
+   non robe generiche. Per ora è quasi vuoto di proposito. */
+
+/* Esempi possibili:
+   - immagini di sfondo particolari
+   - qualche sezione "solo Cupcake"
+   - piccoli override di spaziatura su una pagina
+*/
+
+/* Background cupcake soft */
+/* Background cupcake soft per il sito Asmaa's Cupcake */
+body {
+   background:
+      radial-gradient(circle at 0% 0%, #ffeaf4 0, transparent 55%),
+      radial-gradient(circle at 100% 0%, #ffe4f3 0, transparent 60%),
+      radial-gradient(circle at 0% 100%, #ffe9f5 0, transparent 60%),
+      linear-gradient(180deg, #fff7fb 0%, #ffffff 50%, #fff7fb 100%);
+   background-attachment: fixed;
+}
+
+/* Layer per l'animazione "storia del cupcake" */
+.cupcake-bg {
+   position: fixed;
+   inset: 0;
+   pointer-events: none;
+   display: flex;
+   align-items: flex-end;
+   justify-content: center;
+   z-index: -1;
+}
+
+/* elemento grafico centrale */
+.cupcake-bg::before {
+   content: "";
+   font-size: 6rem;
+   opacity: 0.0;
+   transition: transform 0.6s ease, opacity 0.6s ease;
+   filter: blur(0.2px);
+}
+
+/* Fase 0: niente ancora */
+.cupcake-bg[data-stage="0"]::before {
+   content: "";
+   opacity: 0;
+}
+
+/* Fase 1: preparazione (ciotola) */
+.cupcake-bg[data-stage="1"]::before {
+   content: "🥣";
+   opacity: 0.05;
+   transform: translateY(-10px) scale(0.9);
+}
+
+/* Fase 2: impasto / base pronta */
+.cupcake-bg[data-stage="2"]::before {
+   content: "🧁";
+   opacity: 0.06;
+   transform: translateY(-18px) scale(0.95);
+}
+
+/* Fase 3: cupcake più definito */
+.cupcake-bg[data-stage="3"]::before {
+   content: "🧁";
+   opacity: 0.08;
+   transform: translateY(-24px) scale(1);
+}
+
+/* Fase 4: cupcake decorato (finale) */
+.cupcake-bg[data-stage="4"]::before {
+   content: "🧁✨";
+   opacity: 0.1;
+   transform: translateY(-28px) scale(1.05);
+}
+
+/* ===========================
+   NEWS DEL MESE (HOME)
+   =========================== */
+
+.home-news-section {
+   padding: 2.2rem 0 2.6rem;
+}
+
+.home-news-header {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 0.4rem 1rem;
+   align-items: baseline;
+   margin-bottom: 0.9rem;
+}
+
+.home-news-label {
+   font-size: 0.8rem;
+   text-transform: uppercase;
+   letter-spacing: 0.16em;
+   color: #8b6e80;
+}
+
+.home-news-month {
+   font-size: 0.9rem;
+   color: #b06a8a;
+}
+
+/* Card principale: stile simile al blocco hero di destra */
+.home-news-card {
+   display: grid;
+   grid-template-columns: minmax(0, 1.15fr) minmax(0, 1.7fr);
+   gap: 1.4rem;
+   background: linear-gradient(135deg, #ffe6f3, #ffd9ee);
+   border-radius: 24px;
+   box-shadow: var(--shadow);
+   padding: 1.2rem 1.3rem;
+   align-items: stretch;
+}
+
+/* Colonna immagine */
+.home-news-media {
+   display: flex;
+   align-items: stretch;
+}
+
+.home-news-photo {
+   border-radius: 18px;
+   background: #fff;
+   overflow: hidden;
+   width: 100%;
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
+}
+
+.home-news-photo img {
+   width: 100%;
+   height: 100%;
+   display: block;
+   object-fit: cover;
+}
+
+/* Colonna testo */
+.home-news-body {
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+   justify-content: center;
+}
+
+.home-news-title {
+   font-size: 1.2rem;
+   margin: 0;
+}
+
+.home-news-text {
+   font-size: 0.92rem;
+   color: #6b4b5d;
+   max-width: 34rem;
+}
+
+.home-news-meta {
+   list-style: none;
+   padding: 0;
+   margin: 0.4rem 0 0.8rem;
+   font-size: 0.85rem;
+   color: #7a5870;
+}
+
+.home-news-meta li+li {
+   margin-top: 0.2rem;
+}
+
+/* Button un po' più largo qui */
+.home-news-body .btn {
+   align-self: flex-start;
+   padding-inline: 1.6rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+   .home-news-card {
+      grid-template-columns: 1fr;
+   }
+
+   .home-news-photo {
+      max-height: 230px;
+   }
+
+   .home-news-photo img {
+      object-position: center;
+   }
+
+   .home-news-body {
+      padding-bottom: 0.2rem;
+   }
+}
+
+/* Mostra il menu anche su mobile */
+@media (max-width: 900px) {
+   .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+   }
+}
