@@ -571,4 +571,10 @@ footer span {
     .hero-img-wrap {
         min-height: 210px;
     }
+
+}
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 16px;
 }
